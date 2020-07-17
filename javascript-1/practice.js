@@ -182,10 +182,5 @@ const enemies = people.filter(function(obj) {
 
 // Code Here
 
-const totallyAwesome = people.reduce(function(arr){
-	function newArr(acc, curr){
-		console.log(curr)
-	}
-	},0)
-
-
+let totallyAwesome = people.reduce(function(acc, curr){return acc+=curr.awesomeLevel	
+},0)
